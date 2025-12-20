@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="icon" href="https://console.baleen.cloud/favicon.ico">
+    <link href="/.well-known/baleen/error-pages-in/assets/style.css" rel="stylesheet" />
+    <script src="/.well-known/baleen/error-pages-in/assets/script.js"></script>
+</head>
+<body>
+<div class="error-page-container">
+    <div class="error-body-container">
+        <div class="left-container">
+            <div class="error-body">
+                <h1><span id="title"></span></h1>
+                <div id="status-code"></div>
+                <div id="description" class="description"></div>
+                <a href="#" onclick="location.reload(); return false;">
+                    <span id="reload"></span>
+                </a>
+                <br><br>
+                <div id="request-id-description" class="description"></div>
+                <div><b>6df988bc826d10953452354b7afd8fa2</b></div>
+            </div>
+        </div>
+        <div class="right-container">
+            <img class="img-error"
+                 src="/.well-known/baleen/error-pages-in/assets/error.png"
+                 alt="Error page">
+        </div>
+        <div class="footer">
+            <div class="logo-baleen"></div>
+        </div>
+    </div>
+</div>
+<script>
+    const additionalTranslations = {
+        title: {
+            en: "Unauthorized access",
+            fr: "Accès non autorisé"
+        },
+        description: {
+            en: "You don't have access to this resource. Check your permissions or contact an admin.",
+            fr: "Vous n’avez pas accès à cette ressource. Vérifiez vos droits ou contactez un administrateur."
+        },
+        "status-code": {
+            en: "Error 403",
+            fr: "Erreur 403"
+        }
+    };
+    translate(additionalTranslations);
+</script>
+</body>
+</html>
